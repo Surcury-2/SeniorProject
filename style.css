@@ -48,14 +48,7 @@ ul li a:hover {
 ul li a:active {
   background-color: #008f02;
 }
-img {
-  display: flex;
-  obect-fit: cover;
-  padding: 0px 0px;
-  justify-content: right;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-}
 ul li a.active {
   background-color: #04AA6D;
 }
+
