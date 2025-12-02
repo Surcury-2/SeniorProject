@@ -9,6 +9,9 @@ header {
   padding: 10px 10px;
   box-sizing: border-box;
   background-image: url("https://cdn.sanity.io/images/41hcjk5q/production/9e9d0a9e0126a1a91b8c6b4b051904b071fcb1a7-493x335.jpg?rect=0,4,493,329&w=720&h=480&fm=webp&q=70&auto=format");
+  background-attachment: fixed;  
+  background-size: cover;        
+  background-position: center;  
 }
 p {
   /*text-indent: 1.5em;*/
