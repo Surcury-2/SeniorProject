@@ -5,25 +5,33 @@ html {
 }
 header {
   margin: 0;
-  display: block;
-  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  font-style: bold;
+  font: times new roman;
+  background-position: center;  
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 0px 0px;
   box-sizing: border-box;
   background-image: url("https://cdn.sanity.io/images/41hcjk5q/production/9e9d0a9e0126a1a91b8c6b4b051904b071fcb1a7-493x335.jpg?rect=0,4,493,329&w=720&h=480&fm=webp&q=70&auto=format");
   background-attachment: fixed;  
-  background-size: cover;        
-  background-position: center;  
+  background-size: contain; 
+
 }
 p {
   /*text-indent: 1.5em;*/
    font: 20px Helvetica, Sans-Serif;
-   color: white;
+   color: #ffffff;
    overflow: hidden;
    padding: 0px;
    text-align: justify;
-   background: rgb(0, 0, 0,0.3); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
+   background: rgb(26, 26, 26, 0.7);
   }
-ul.a {
+.a {
   overflow: hidden;
   list-style-type: none;
   width: 100%;
@@ -31,24 +39,35 @@ ul.a {
   padding: 0;
   background-color: #333333;
   display: flex;
-  border: 2px solid black;
+  border: 1px solid black;
   justify-content: left;
 }
-ul.a li a {
-  display: block;
+.a li {
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: underline dotted black;
 }
-ul li a:hover {
+.a li a:hover {
   font-size: 125%;
   background-color: #111111;
 }
-ul li a:active {
+.a li a:active {
   background-color: #008f02;
 }
-ul li a.active {
+.a li a.active {
   background-color: #04AA6D;
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: block;
+  border: 0px solid;
+  justify-content: center;
 }
 
