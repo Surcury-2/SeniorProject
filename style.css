@@ -20,7 +20,14 @@ header {
   background-image: url("https://cdn.sanity.io/images/41hcjk5q/production/9e9d0a9e0126a1a91b8c6b4b051904b071fcb1a7-493x335.jpg?rect=0,4,493,329&w=720&h=480&fm=webp&q=70&auto=format");
   background-attachment: fixed;  
   background-size: contain; 
-
+  color: #fbff00;
+  width: 100%;
+}
+.ab li, a{
+  color: #eeff00;
+  text-align: center;
+  padding: 0px 5px;
+  text-decoration: underline dotted white !important;
 }
 p {
   /*text-indent: 1.5em;*/
@@ -31,32 +38,27 @@ p {
    text-align: justify;
    background: rgb(26, 26, 26, 0.7);
   }
-.a {
+.ab {
   overflow: hidden;
   list-style-type: none;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0px 0px;
   background-color: #333333;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #eeff00;
   justify-content: left;
+  align-items: center;
+  height: 25px;
 }
-.a li {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: underline dotted black;
+
+.ab li:hover, a:hover {
+  background-color: #ff0000;
+  font-size: 102%;
+  color: white; 
 }
-.a li a:hover {
-  font-size: 125%;
-  background-color: #111111;
-}
-.a li a:active {
-  background-color: #008f02;
-}
-.a li a.active {
-  background-color: #04AA6D;
+ul.ab a:active {
+  background-color: #ffffff;
 }
 .dropdown{
   float: left;
@@ -64,10 +66,39 @@ p {
   list-style-type: none;
   width: 100%;
   margin: 0;
+  color: black;
   padding: 0;
-  background-color: #000000;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border: 0px solid;
   justify-content: center;
+  text-decoration: none;
 }
-
+.dropdown {
+  overflow: hidden;
+  display: block;
+  width: auto;
+  padding: 0px 5px;
+  height: auto;
+}
+.ab > li:nth-child(2):hover .dropdown-content {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}

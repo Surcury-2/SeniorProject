@@ -11,19 +11,16 @@
 <body>
   <script src="script.js"></script>
   <header> <strong>Welcome to My Site</strong> </header>
-  <nav> <ul class = "a">
-  <li ><a href="about.html">About</a>        </li>
-  <li> <a href="">Resources</a> 
-    <ul class = "dropdown">
-    <a href=""> Presentations </a>
-    <a href=""> Videos </a>
-    <a href=""> Articles </a>
-    <a href=""> Downloads </a>
-    <a href=""> Quizzes </a>
-  </ul></li>
-  <li><a href="manufacturing.html">Manufacturing</a></li>
- </ul> </nav> 
-  <p style="font: 10px Papyrus, Sans-Serif;"> *This website was developed following <span style = "color: red;"> 50 </span> hours shadowing with<strong><a href="https://www.stihlusa.com" target= "blank" rel = "noopener noreferrer"> STIHL Inc. </a></strong>*</p>
+  <div id="nav-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+<p style="font: 10px Papyrus, Sans-Serif;"> *This website was developed following <span style = "color: red;"> 50 </span> hours shadowing with<strong><a href="https://www.stihlusa.com" target= "blank" rel = "noopener noreferrer"> STIHL Inc. </a></strong>*</p>
 <cite>STIHL</cite>
 <img src = "https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg" alt = "self-closing tags in HTML ..." width = 500px height = 700px/>
 </body>
