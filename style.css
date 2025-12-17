@@ -146,3 +146,9 @@ footer.show {
 .letters {
   list-style-type: lower-alpha;
 }
+pre {
+  width: 100%; /* Or any desired fixed width */
+  white-space: pre-wrap; /* Wraps text while preserving spaces and line breaks */
+  word-wrap: break-word; /* For breaking long words or URLs if needed (old syntax) */
+  overflow-wrap: break-word; /* Modern syntax for breaking long words */
+}
