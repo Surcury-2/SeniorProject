@@ -10,3 +10,16 @@ window.addEventListener('scroll', function() {
     }
     
 });
+const loader = new THREE.GLTFLoader();
+
+loader.load(
+  '660cylinderReduced.gltf',
+  function (gltf) {
+    scene.add(gltf.scene);
+  },
+  undefined,
+  function (error) {
+    console.error('Error loading model:', error);
+  }
+);
+
