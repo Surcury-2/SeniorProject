@@ -1,0 +1,11 @@
+# Ensure binary files are served with correct MIME types
+*.bin
+  Content-Type: application/octet-stream
+
+*.gltf
+  Content-Type: model/gltf+json
+
+# CORS headers for cross-origin requests (if needed)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: *
