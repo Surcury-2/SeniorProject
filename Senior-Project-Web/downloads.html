@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <strong>Downloads</strong>
+  </header>
+  <div id="nav-placeholder">
+
+  </div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+  <model-viewer
+    src="660cylinderReduced.gltf"
+    alt="660 Cylinder 3D Model"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+    ar
+    style="width: 100%; height: 200px;"
+  ></model-viewer>
+  <cite>3dscan Stihl ms660 chainsaw cylinder
+[Chainsaw Engine Cylinder].Valery Rutkovskiy. (2021). [Source: https://grabcad.com/library/3dscan-stihl-ms660-chainsaw-cylinder-1].</cite>
+  <model-viewer
+    src="St500i.gltf"
+    alt="Stihl MS 500i Chainsaw Housing"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+    ar
+    style="width: 100%; height: 200px;"
+  ></model-viewer>
+  <cite>3dscan Stihl MS 500i chainsaw housing/crankcase
+  [Chainsaw Engine Cylinder].tom tom. (2025). [Source: https://grabcad.com/library/stihl-ms-500i-1].</cite>
+</body>
