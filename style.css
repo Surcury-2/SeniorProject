@@ -1,0 +1,154 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url(https://t4.ftcdn.net/jpg/05/25/15/35/360_F_525153525_3tVDBbD5fbMu6LMZbheSBB5pH1YbXJjW.jpg);
+}
+body {
+  overflow-y: scroll;
+  padding-bottom: 90px;
+}
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  font-style: bold;
+  font: times new roman;
+  background-position: center;  
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 0px 0px;
+  box-sizing: border-box;
+  background-image: url("https://cdn.sanity.io/images/41hcjk5q/production/9e9d0a9e0126a1a91b8c6b4b051904b071fcb1a7-493x335.jpg?rect=0,4,493,329&w=720&h=480&fm=webp&q=70&auto=format");
+  background-attachment: fixed;  
+  background-size: contain; 
+  color: #fbff00;
+  width: 100%;
+  border-radius: 25px;
+}
+.ab li, a{
+  color: #eeff00;
+  text-align: center;
+  padding: 0px 5px;
+  text-decoration: underline dotted white !important;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+#credit {
+   font: 20px Helvetica, Sans-Serif;
+   color: #ffffff;
+   overflow: hidden;
+   padding: 0px;
+   text-align: justify;
+   background: rgb(26, 26, 26, 0.1);
+  padding: 10px;
+  }
+.ab {
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px;
+  background-color: #333333;
+  display: flex;
+  border: 2px solid #eeff00;
+  justify-content: left;
+  align-items: center;
+  height: 25px;
+  border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagQWqVbmFhoqtgbGPoS5xm-fHluLAVWVt8g&s) 75 stretch;
+}
+
+.ab li:hover, a:hover {
+  background-color: #ff0000;
+  font-size: 103%;
+  color: white; 
+}
+ul.ab a:active {
+  background-color: #ffffff;
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  color: black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: 0px solid;
+  justify-content: center;
+  text-decoration: none;
+}
+.dropdown {
+  display: block;
+  width: auto;
+  padding: 0px 5px;
+  height: auto;
+}
+.ab > li:nth-child(3):hover .dropdown-content {
+  visibility: visible;
+  width: fit-content;
+  margin: 0 auto;
+}
+.dropdown-content {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.opener {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%
+}
+.opener img {
+  float: right;
+  margin: 0px 10px 10px 0px;
+  border: 1px solid #000000;
+  width: 30%;
+  height: 20%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff7300; 
+  color: white;    
+  padding: 0px;   
+  text-align: center;
+  z-index: -1; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+}
+
+footer.show {
+  opacity: 1; /* Make it visible */
+  z-index: 999; /* Bring it above content when visible */
+}
+.letters {
+  list-style-type: lower-alpha;
+}
+pre {
+  width: 100%; /* Or any desired fixed width */
+  white-space: pre-wrap; /* Wraps text while preserving spaces and line breaks */
+  word-wrap: break-word; /* For breaking long words or URLs if needed (old syntax) */
+  overflow-wrap: break-word; /* Modern syntax for breaking long words */
+}
